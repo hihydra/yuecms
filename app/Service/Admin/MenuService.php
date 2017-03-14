@@ -7,7 +7,7 @@ use Exception,DB;
 * 菜单service
 */
 class MenuService{
-	
+
 	use SendSystemErrorTrait;
 	protected $menu;
 
@@ -18,7 +18,7 @@ class MenuService{
 
 	/**
 	 * 递归菜单数据
-	 * @author 晚黎
+
 	 * @date   2016-11-04T10:43:11+0800
 	 * @param  [type]                   $menus [数据库或缓存中查询出来的数据]
 	 * @param  integer                  $pid   [菜单关系id]
@@ -40,7 +40,7 @@ class MenuService{
 	}
 	/**
 	 * 排序子菜单并缓存
-	 * @author 晚黎
+
 	 * @date   2016-11-04T10:44:11+0800
 	 * @return [type]                   [Array]
 	 */
@@ -58,13 +58,13 @@ class MenuService{
 			// 缓存菜单数据
 			cache()->forever(config('admin.global.cache.menuList'),$menuList);
 			return $menuList;
-			
+
 		}
 		return '';
 	}
 	/**
 	 * 获取菜单数据
-	 * @author 晚黎
+
 	 * @date   2016-11-04T10:45:38+0800
 	 * @return [type]                   [description]
 	 */
@@ -78,7 +78,7 @@ class MenuService{
 	}
 	/**
 	 * 添加菜单
-	 * @author 晚黎
+
 	 * @date   2016-11-04T15:10:32+0800
 	 * @param  [type]                   $attributes [表单数据]
 	 * @return [type]                               [Boolean]
@@ -103,7 +103,7 @@ class MenuService{
 	}
 	/**
 	 * 根据菜单ID查找数据
-	 * @author 晚黎
+
 	 * @date   2016-11-04T16:25:59+0800
 	 * @param  [type]                   $id [description]
 	 * @return [type]                       [description]
@@ -119,7 +119,7 @@ class MenuService{
 	}
 	/**
 	 * 修改菜单数据
-	 * @author 晚黎
+
 	 * @date   2016-11-04
 	 * @param  [type]     $attributes [表单数据]
 	 * @param  [type]     $id         [resource路由id]
@@ -149,12 +149,12 @@ class MenuService{
 			$this->sendSystemErrorMail(env('MAIL_SYSTEMERROR',''),$e);
 			return false;
 		}
-		
+
 
 	}
 	/**
 	 * 删除菜单
-	 * @author 晚黎
+
 	 * @date   2016-11-04
 	 * @param  [type]     $id [菜单ID]
 	 * @return [type]         [description]

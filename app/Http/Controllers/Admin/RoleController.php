@@ -18,7 +18,7 @@ class RoleController extends Controller
 
     /**
      * 角色列表
-     * @author 晚黎
+
      * @date   2016-11-02T17:01:40+0800
      * @return [type]                   [description]
      */
@@ -28,7 +28,7 @@ class RoleController extends Controller
     }
     /**
      * datatables获取数据
-     * @author 晚黎
+
      * @date   2016-11-02T17:01:59+0800
      * @return [type]                   [description]
      */
@@ -40,7 +40,7 @@ class RoleController extends Controller
 
     /**
      * 创建角色视图
-     * @author 晚黎
+
      * @date   2016-11-02T17:02:16+0800
      * @return [type]                   [description]
      */
@@ -52,7 +52,7 @@ class RoleController extends Controller
 
     /**
      * 添加角色
-     * @author 晚黎
+
      * @date   2016-11-03
      * @param  RoleRequest $request [description]
      * @return [type]               [description]
@@ -77,7 +77,7 @@ class RoleController extends Controller
 
     /**
      * 修改角色
-     * @author 晚黎
+
      * @date   2016-11-03T09:21:49+0800
      * @param  [type]                   $id [description]
      * @return [type]                       [description]
@@ -91,7 +91,7 @@ class RoleController extends Controller
 
     /**
      * 修改角色
-     * @author 晚黎
+
      * @date   2016-11-03T09:52:58+0800
      * @param  RoleRequest              $request [description]
      * @param  [type]                   $id      [description]

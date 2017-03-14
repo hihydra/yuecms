@@ -16,7 +16,7 @@ class ArticleController extends Controller
     }
     /**
      * 首页列表
-     * @author 晚黎
+
      * @date   2016-12-13T11:59:42+0800
      * @return [type]                   [description]
      */
@@ -27,7 +27,7 @@ class ArticleController extends Controller
 
     /**
      * datatable数据
-     * @author 晚黎
+
      * @date   2016-12-13T11:59:30+0800
      * @return [type]                   [description]
      */
@@ -39,7 +39,7 @@ class ArticleController extends Controller
 
     /**
      * 添加视图
-     * @author 晚黎
+
      * @date   2016-12-09T14:15:53+0800
      * @return [type]                   [description]
      */
@@ -51,7 +51,7 @@ class ArticleController extends Controller
 
     /**
      * 添加文章
-     * @author 晚黎
+
      * @date   2016-12-13T11:58:21+0800
      * @param  ArticleRequest           $request [description]
      * @return [type]                            [description]
@@ -101,7 +101,7 @@ class ArticleController extends Controller
 
     /**
      * 删除文章
-     * @author 晚黎
+
      * @date   2016-12-14T10:19:46+0800
      * @param  [type]                   $id [description]
      * @return [type]                       [description]
@@ -113,7 +113,7 @@ class ArticleController extends Controller
     }
     /**
      * 草稿箱
-     * @author 晚黎
+
      * @date   2016-12-14T10:15:10+0800
      * @param  [type]                   $id [description]
      * @return [type]                       [description]
@@ -125,7 +125,7 @@ class ArticleController extends Controller
     }
     /**
      * 发布
-     * @author 晚黎
+
      * @date   2016-12-14T10:15:21+0800
      * @param  [type]                   $id [description]
      * @return [type]                       [description]
@@ -137,7 +137,7 @@ class ArticleController extends Controller
     }
     /**
      * markdown上传图片
-     * @author 晚黎
+
      * @date   2016-12-16T12:34:19+0800
      * @return [type]                   [description]
      */

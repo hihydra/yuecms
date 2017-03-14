@@ -9,7 +9,7 @@ use Exception;
 * 角色service
 */
 class UserService{
-	
+
 	use SendSystemErrorTrait;
 	protected $user;
 	protected $role;
@@ -23,7 +23,7 @@ class UserService{
 	}
 	/**
 	 * datatables获取数据
-	 * @author 晚黎
+
 	 * @date   2016-11-02T10:31:46+0800
 	 * @return [type]                   [description]
 	 */
@@ -63,7 +63,7 @@ class UserService{
 	}
 	/**
 	 * 创建用户视图数据
-	 * @author 晚黎
+
 	 * @date   2016-11-03T13:29:53+0800
 	 * @return [type]                   [description]
 	 */
@@ -73,7 +73,7 @@ class UserService{
 	}
 	/**
 	 * 获取所有权限并分组
-	 * @author 晚黎
+
 	 * @date   2016-11-03T13:30:13+0800
 	 * @return [type]                   [description]
 	 */
@@ -83,7 +83,7 @@ class UserService{
 	}
 	/**
 	 * 获取所有的角色
-	 * @author 晚黎
+
 	 * @date   2016-11-03T13:23:46+0800
 	 * @return [type]                   [description]
 	 */
@@ -93,7 +93,7 @@ class UserService{
 	}
 	/**
 	 * 添加用户
-	 * @author 晚黎
+
 	 * @date   2016-11-03T15:16:00+0800
 	 * @param  [type]                   $formData [表单中所有的数据]
 	 * @return [type]                             [Boolean]
@@ -122,7 +122,7 @@ class UserService{
 	}
 	/**
 	 * 编辑用户视图所需数据
-	 * @author 晚黎
+
 	 * @date   2016-11-03T15:52:46+0800
 	 * @param  [type]                   $id [用户ID]
 	 * @return [type]                       [description]
@@ -133,7 +133,7 @@ class UserService{
 	}
 	/**
 	 * 根据ID获取权限数据
-	 * @author 晚黎
+
 	 * @date   2016-11-03T09:22:44+0800
 	 * @param  [type]                   $id [权限id]
 	 * @return [type]                       [查询出来的权限对象，查不到数据时跳转404]
@@ -148,7 +148,7 @@ class UserService{
 	}
 	/**
 	 * 修改用户
-	 * @author 晚黎
+
 	 * @date   2016-11-03T16:12:05+0800
 	 * @param  [type]                   $attributes [表单数据]
 	 * @param  [type]                   $id         [resource路由传递过来的id]
@@ -186,7 +186,7 @@ class UserService{
 	}
 	/**
 	 * 用户暂不做状态管理，直接删除
-	 * @author 晚黎
+
 	 * @date   2016-11-03T16:33:12+0800
 	 * @param  [type]                   $id [用户ID]
 	 * @return [type]                       [Boolean]
@@ -202,11 +202,11 @@ class UserService{
 			$this->sendSystemErrorMail(env('MAIL_SYSTEMERROR',''),$e);
 			return false;
 		}
-		
+
 	}
 	/**
 	 * 重置用户密码
-	 * @author 晚黎
+
 	 * @date   2016-11-03T17:30:09+0800
 	 * @param  [type]                   $id [description]
 	 * @return [type]                       [description]

@@ -8,7 +8,7 @@ use Exception,DB;
 * 菜单service
 */
 class CategoryService{
-	
+
 	use SendSystemErrorTrait,CategoryListTrait;
 
 	protected $category;
@@ -17,7 +17,7 @@ class CategoryService{
 	{
 		$this->category = $category;
 	}
-	
+
 	public function getCategoryList()
 	{
 		$categories = $this->getCategoryFromCache();
@@ -30,7 +30,7 @@ class CategoryService{
 	}
 	/**
 	 * 添加菜单
-	 * @author 晚黎
+
 	 * @date   2016-11-04T15:10:32+0800
 	 * @param  [type]                   $attributes [表单数据]
 	 * @return [type]                               [Boolean]
@@ -49,7 +49,6 @@ class CategoryService{
 				'message' => $result ? trans('admin/alert.category.create_success'):trans('admin/alert.category.create_error'),
 			];
 		} catch (Exception $e) {
-			dd($e);
 			// 错误信息发送邮件
 			$this->sendSystemErrorMail(env('MAIL_SYSTEMERROR',''),$e);
 			return false;
@@ -57,7 +56,7 @@ class CategoryService{
 	}
 	/**
 	 * 根据菜单ID查找数据
-	 * @author 晚黎
+
 	 * @date   2016-11-04T16:25:59+0800
 	 * @param  [type]                   $id [description]
 	 * @return [type]                       [description]
@@ -73,7 +72,7 @@ class CategoryService{
 	}
 	/**
 	 * 修改菜单数据
-	 * @author 晚黎
+
 	 * @date   2016-11-04
 	 * @param  [type]     $attributes [表单数据]
 	 * @param  [type]     $id         [resource路由id]
@@ -104,12 +103,12 @@ class CategoryService{
 			$this->sendSystemErrorMail(env('MAIL_SYSTEMERROR',''),$e);
 			return false;
 		}
-		
+
 
 	}
 	/**
 	 * 删除菜单
-	 * @author 晚黎
+
 	 * @date   2016-11-04
 	 * @param  [type]     $id [菜单ID]
 	 * @return [type]         [description]

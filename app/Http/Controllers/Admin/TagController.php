@@ -16,7 +16,7 @@ class TagController extends Controller
 
     /**
      * 首页视图
-     * @author 晚黎
+
      * @date   2016-12-09T10:57:32+0800
      * @return [type]                   [description]
      */
@@ -26,7 +26,7 @@ class TagController extends Controller
     }
     /**
      * datatable数据
-     * @author 晚黎
+
      * @date   2016-12-09T11:14:44+0800
      * @return [type]                   [description]
      */
@@ -38,7 +38,7 @@ class TagController extends Controller
 
     /**
      * 添加视图
-     * @author 晚黎
+
      * @date   2016-12-09T11:23:23+0800
      * @return [type]                   [description]
      */
@@ -49,7 +49,7 @@ class TagController extends Controller
 
     /**
      * 添加标签
-     * @author 晚黎
+
      * @date   2016-12-09T11:23:34+0800
      * @param  Request                  $request [description]
      * @return [type]                            [description]
@@ -62,7 +62,7 @@ class TagController extends Controller
 
     /**
      * 修改视图
-     * @author 晚黎
+
      * @date   2016-12-09T11:28:21+0800
      * @param  [type]                   $id [description]
      * @return [type]                       [description]
@@ -75,7 +75,7 @@ class TagController extends Controller
 
     /**
      * 修改标签
-     * @author 晚黎
+
      * @date   2016-12-09T11:30:42+0800
      * @param  TagRequest               $request [description]
      * @param  [type]                   $id      [description]
@@ -89,7 +89,7 @@ class TagController extends Controller
 
     /**
      * 删除标签
-     * @author 晚黎
+
      * @date   2016-12-09T11:33:24+0800
      * @param  [type]                   $id [description]
      * @return [type]                       [description]

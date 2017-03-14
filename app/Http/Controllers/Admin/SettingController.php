@@ -11,10 +11,10 @@ class SettingController extends Controller
         $this->middleware('check.permission:blog');
         $this->setting = $setting;
     }
-    
+
     /**
      * 网站设置首页
-     * @author 晚黎
+
      * @date   2016-12-15T13:09:10+0800
      * @return [type]                   [description]
      */

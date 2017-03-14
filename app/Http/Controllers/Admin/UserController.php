@@ -17,7 +17,7 @@ class UserController extends Controller
 
     /**
      * 用户列表
-     * @author 晚黎
+
      * @date   2016-11-03T11:50:59+0800
      * @return [type]                   [description]
      */
@@ -45,7 +45,7 @@ class UserController extends Controller
 
     /**
      * 添加用户
-     * @author 晚黎
+
      * @date   2016-11-03T15:14:56+0800
      * @param  UserRequest              $request [description]
      * @return [type]                            [description]
@@ -58,7 +58,7 @@ class UserController extends Controller
 
     /**
      * 查看用户信息
-     * @author 晚黎
+
      * @date   2016-11-03T16:42:06+0800
      * @param  [type]                   $id [description]
      * @return [type]                       [description]
@@ -71,7 +71,7 @@ class UserController extends Controller
 
     /**
      * 修改用户视图
-     * @author 晚黎
+
      * @date   2016-11-03T16:41:48+0800
      * @param  [type]                   $id [description]
      * @return [type]                       [description]
@@ -84,7 +84,7 @@ class UserController extends Controller
 
     /**
      * 修改用户
-     * @author 晚黎
+
      * @date   2016-11-03T16:10:02+0800
      * @param  UserRequest              $request [description]
      * @param  [type]                   $id      [description]
@@ -98,7 +98,7 @@ class UserController extends Controller
 
     /**
      * 删除用户
-     * @author 晚黎
+
      * @date   2016-11-03T17:20:49+0800
      * @param  [type]                   $id [description]
      * @return [type]                       [description]
@@ -111,7 +111,7 @@ class UserController extends Controller
 
     /**
      * 重置用户密码
-     * @author 晚黎
+
      * @date   2016-11-03T17:21:05+0800
      * @param  [type]                   $id [description]
      * @return [type]                       [description]

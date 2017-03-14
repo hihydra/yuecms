@@ -7,7 +7,7 @@ trait EncryptIdsTrait{
 
 	/**
 	 * 设置加密
-	 * @author 晚黎
+
 	 * @date   2016-12-13T14:46:13+0800
 	 * @param  string                   $value [description]
 	 */
@@ -17,7 +17,7 @@ trait EncryptIdsTrait{
 	}
 	/**
 	 * 加密ID
-	 * @author 晚黎
+
 	 * @date   2016-12-13T14:47:12+0800
 	 * @param  [type]                   $id         [description]
 	 * @param  string                   $connection [description]
@@ -36,7 +36,7 @@ trait EncryptIdsTrait{
 	}
 	/**
 	 * 解密ID
-	 * @author 晚黎
+
 	 * @date   2016-12-13T14:47:22+0800
 	 * @param  [type]                   $id         [description]
 	 * @param  string                   $connection [description]
@@ -57,7 +57,7 @@ trait EncryptIdsTrait{
 
 	/**
 	 * 转换ID
-	 * @author 晚黎
+
 	 * @date   2016-12-15T10:36:26+0800
 	 * @param  string                   $value [description]
 	 */

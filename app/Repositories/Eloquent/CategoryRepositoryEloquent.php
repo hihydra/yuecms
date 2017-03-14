@@ -31,7 +31,7 @@ class CategoryRepositoryEloquent extends BaseRepository implements CategoryRepos
     }
     /**
      * 获取文章分类
-     * @author 晚黎
+
      * @date   2016-12-09T16:00:26+0800
      * @return [type]                   [description]
      */

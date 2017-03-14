@@ -36,7 +36,7 @@ class LinkRequest extends FormRequest
 
      /**
       * 验证信息
-      * @author 晚黎
+
       * @date   2016-11-02T10:25:59+0800
       * @return [type]                   [description]
       */
@@ -49,7 +49,7 @@ class LinkRequest extends FormRequest
      }
      /**
       * 字段名称
-      * @author 晚黎
+
       * @date   2016-11-02T10:28:52+0800
       * @return [type]                   [description]
       */

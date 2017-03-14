@@ -14,7 +14,7 @@ class IndexController extends Controller
 
     /**
      * 首页
-     * @author 晚黎
+
      * @date   2017-02-24T17:01:36+0800
      * @return [type]                   [description]
      */

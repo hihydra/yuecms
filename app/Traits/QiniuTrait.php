@@ -5,7 +5,7 @@ trait QiniuTrait{
 
 	/**
 	 * 上传文件到七牛
-	 * @author 晚黎
+
 	 * @date   2016-12-12T17:14:41+0800
 	 * @param  [type]                   $file [request file 对象]
 	 * @return [type]                         [图片路径]
@@ -24,7 +24,7 @@ trait QiniuTrait{
 	}
 	/**
 	 * 获取目录下所有图片
-	 * @author 晚黎
+
 	 * @date   2016-12-16T12:25:35+0800
 	 * @param  [type]                   $directory [description]
 	 * @return [type]                              [description]
@@ -36,7 +36,7 @@ trait QiniuTrait{
 	}
 	/**
 	 * 删除七牛图片
-	 * @author 晚黎
+
 	 * @date   2016-12-19T11:24:13+0800
 	 * @param  [type]                   $img [description]
 	 * @return [type]                        [description]

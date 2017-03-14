@@ -17,7 +17,7 @@ class CategoryController extends Controller
 
     /**
      * 分类列表
-     * @author 晚黎
+
      * @date   2017-02-27T16:19:38+0800
      * @param  [type]                   $id [description]
      * @return [type]                       [description]

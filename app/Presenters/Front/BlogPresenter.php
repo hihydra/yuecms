@@ -7,7 +7,7 @@ class BlogPresenter
     use EncryptIdsTrait, RedisOperationTrait;
     /**
      * 文章列表渲染
-     * @author 晚黎
+
      * @date   2017-02-27T11:24:04+0800
      * @param  [type]                   $articles [description]
      * @return [type]                             [description]
@@ -67,7 +67,7 @@ Eof;
 	}
     /**
      * 文章所属分类
-     * @author 晚黎
+
      * @date   2017-02-27T15:01:04+0800
      * @param  [type]                   $category [description]
      * @return [type]                             [description]
@@ -82,7 +82,7 @@ Eof;
 
     /**
      * 首页分类导航
-     * @author 晚黎
+
      * @date   2017-02-27T13:42:40+0800
      * @param  [type]                   $categories [description]
      * @return [type]                               [description]
@@ -120,7 +120,7 @@ Eof;
     }
     /**
      * 子分类
-     * @author 晚黎
+
      * @date   2017-02-27T13:42:54+0800
      * @param  [type]                   $categories [description]
      * @return [type]                               [description]
@@ -141,7 +141,7 @@ Eof;
     }
     /**
      * 友情链接列表
-     * @author 晚黎
+
      * @date   2017-02-27T14:27:43+0800
      * @param  [type]                   $links [description]
      * @return [type]                          [description]
@@ -159,7 +159,7 @@ Eof;
 
     /**
      * 文章详情页分类显示
-     * @author 晚黎
+
      * @date   2017-02-27T17:06:22+0800
      * @param  [type]                   $categories [description]
      * @return [type]                               [description]
@@ -174,7 +174,7 @@ Eof;
 
     /**
      * 文章标签显示
-     * @author 晚黎
+
      * @date   2017-02-27T17:11:00+0800
      * @param  [type]                   $tags [description]
      * @return [type]                         [description]
@@ -192,7 +192,7 @@ Eof;
 
     /**
      * 推荐文章列表
-     * @author 晚黎
+
      * @date   2017-03-01T17:06:26+0800
      * @param  [type]                   $recommendedArticles [description]
      * @return [type]                                        [description]

@@ -5,7 +5,7 @@ class UserPresenter
 {
 	/**
 	 * 创建修改用户界面，角色权限列表
-	 * @author 晚黎
+
 	 * @date   2016-11-03T09:36:36+0800
 	 * @param  [type]                   $permissions     [所有权限]
 	 * @param  [type]                   $rolePermissions [该角色已有的权限]
@@ -36,7 +36,7 @@ Eof;
 
 	/**
 	 * 添加用户出现错误时，获取已经选中的选项
-	 * @author 晚黎
+
 	 * @date   2016-11-03T09:42:15+0800
 	 * @param  [type]                   $permissionId   [权限ID]
 	 * @param  [type]                   $rolePermissions[修改角色时所有权限ID数组]
@@ -62,7 +62,7 @@ Eof;
 	}
 	/**
 	 * 角色列表
-	 * @author 晚黎
+
 	 * @date   2016-11-03T14:05:56+0800
 	 * @param  [type]                   $roles [所有角色对象]
 	 * @return [type]                          [HTML]
@@ -79,7 +79,7 @@ Eof;
 	}
 	/**
 	 * 添加用户出现错误时，获取已经选中的角色
-	 * @author 晚黎
+
 	 * @date   2016-11-03T14:25:33+0800
 	 * @param  [type]                   $roleId    [description]
 	 * @param  array                    $userRoles [description]
@@ -106,7 +106,7 @@ Eof;
 
 	/**
 	 * 查看用户信息时展示的table
-	 * @author 晚黎
+
 	 * @date   2016-11-03T16:49:04+0800
 	 * @param  [type]                   $rolePermissions [description]
 	 * @return [type]                                    [description]
@@ -141,7 +141,7 @@ Eof;
 
 	/**
 	 * 查看用户信息时展示的角色
-	 * @author 晚黎
+
 	 * @date   2016-11-03T16:55:32+0800
 	 * @param  [type]                   $userRoles [description]
 	 * @return [type]                              [description]

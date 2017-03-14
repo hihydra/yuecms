@@ -15,7 +15,7 @@ class MediaController extends Controller
     }
     /**
      * 七牛资源图片
-     * @author 晚黎
+
      * @date   2016-12-16T12:36:41+0800
      * @return [type]                   [description]
      */
@@ -31,7 +31,7 @@ class MediaController extends Controller
 
     /**
      * 删除图片
-     * @author 晚黎
+
      * @date   2016-12-16T18:12:52+0800
      * @param  [type]                   $id [description]
      * @return [type]                       [description]

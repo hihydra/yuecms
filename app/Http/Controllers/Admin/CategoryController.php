@@ -15,7 +15,7 @@ class CategoryController extends Controller
     }
     /**
      * 分类首页
-     * @author 晚黎
+
      * @date   2016-12-08T16:39:22+0800
      * @return [type]                   [description]
      */
@@ -27,7 +27,7 @@ class CategoryController extends Controller
 
     /**
      * 添加视图
-     * @author 晚黎
+
      * @date   2016-12-09T10:11:27+0800
      * @return [type]                   [description]
      */
@@ -39,7 +39,7 @@ class CategoryController extends Controller
 
     /**
      * 添加分类
-     * @author 晚黎
+
      * @date   2016-12-09T10:11:16+0800
      * @param  CategoryReuqest          $request [description]
      * @return [type]                            [description]
@@ -52,7 +52,7 @@ class CategoryController extends Controller
 
     /**
      * 查看分类
-     * @author 晚黎
+
      * @date   2016-12-09T10:11:02+0800
      * @param  [type]                   $id [description]
      * @return [type]                       [description]
@@ -66,7 +66,7 @@ class CategoryController extends Controller
 
     /**
      * 修改视图
-     * @author 晚黎
+
      * @date   2016-12-09T10:10:56+0800
      * @param  [type]                   $id [description]
      * @return [type]                       [description]
@@ -80,7 +80,7 @@ class CategoryController extends Controller
 
     /**
      * 修改分类
-     * @author 晚黎
+
      * @date   2016-12-09T10:10:45+0800
      * @param  Request                  $request [description]
      * @param  [type]                   $id      [description]
@@ -94,7 +94,7 @@ class CategoryController extends Controller
 
     /**
      * 删除分类
-     * @author 晚黎
+
      * @date   2016-12-09T10:10:36+0800
      * @param  [type]                   $id [description]
      * @return [type]                       [description]
@@ -106,7 +106,7 @@ class CategoryController extends Controller
     }
     /**
      * 分类排序
-     * @author 晚黎
+
      * @date   2016-12-09T10:10:15+0800
      * @return [type]                   [description]
      */

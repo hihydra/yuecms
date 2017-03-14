@@ -17,7 +17,7 @@ class PermissionController extends Controller
     }
     /**
      * 权限列表
-     * @author 晚黎
+
      * @date   2016-10-29
      * @return [type]     [description]
      */
@@ -27,7 +27,7 @@ class PermissionController extends Controller
     }
     /**
      * datatables获取数据
-     * @author 晚黎
+
      * @date   2016-10-29
      * @return [type]     [description]
      */
@@ -39,7 +39,7 @@ class PermissionController extends Controller
 
     /**
      * 添加权限视图
-     * @author 晚黎
+
      * @date   2016-11-01T16:47:26+0800
      * @return [type]                   [description]
      */
@@ -50,7 +50,7 @@ class PermissionController extends Controller
 
     /**
      * 添加权限
-     * @author 晚黎
+
      * @date   2016-11-02T10:30:30+0800
      * @param  PermissionRequest        $request [description]
      * @return [type]                            [description]
@@ -63,7 +63,7 @@ class PermissionController extends Controller
 
     /**
      * 修改权限视图
-     * @author 晚黎
+
      * @date   2016-11-02T11:42:41+0800
      * @param  [type]                   $id [description]
      * @return [type]                       [description]
@@ -76,7 +76,7 @@ class PermissionController extends Controller
 
     /**
      * 修改权限
-     * @author 晚黎
+
      * @date   2016-11-02T11:58:45+0800
      * @param  PermissionRequest        $request [description]
      * @param  [type]                   $id      [description]

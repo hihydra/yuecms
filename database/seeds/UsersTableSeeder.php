@@ -21,11 +21,5 @@ class UsersTableSeeder extends Seeder
         ])->each(function ($u) use ($admin){
             $u->attachRole($admin);
         });
-
-        factory('App\User', 3)->create([
-        	'password' => '123456'
-        ])->each(function ($u) use ($user){
-            $u->attachRole($user);
-        });
     }
 }

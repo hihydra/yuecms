@@ -17,7 +17,7 @@ class LinkService
 	}
 	/**
 	 * datatables获取数据
-	 * @author 晚黎
+
 	 * @date   2016-11-02T10:31:46+0800
 	 * @return [type]                   [description]
 	 */
@@ -57,7 +57,7 @@ class LinkService
 
 	/**
 	 * 添加友情链接
-	 * @author 晚黎
+
 	 * @date   2016-12-15T11:20:50+0800
 	 * @param  [type]                   $formData [description]
 	 * @return [type]                             [description]
@@ -93,7 +93,7 @@ class LinkService
 
 	/**
 	 * 修改友情链接信息
-	 * @author 晚黎
+
 	 * @date   2016-12-15T10:50:04+0800
 	 * @param  [type]                   $attributes [description]
 	 * @param  [type]                   $id         [description]
@@ -118,7 +118,7 @@ class LinkService
 	}
 	/**
 	 * 删除友情链接
-	 * @author 晚黎
+
 	 * @date   2016-12-15T11:35:24+0800
 	 * @param  [type]                   $id [description]
 	 * @return [type]                       [description]

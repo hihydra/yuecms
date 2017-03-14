@@ -11,7 +11,7 @@ class DashboardController extends Controller
     }
 	/**
 	 * 控制台
-	 * @author 晚黎
+
 	 * @date   2016-10-29
 	 * @return [type]     [description]
 	 */
@@ -21,7 +21,7 @@ class DashboardController extends Controller
     }
     /**
      * datatable国际化
-     * @author 晚黎
+
      * @date   2016-10-29
      * @return [type]     [description]
      */

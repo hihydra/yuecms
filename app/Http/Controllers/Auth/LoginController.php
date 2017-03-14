@@ -37,7 +37,7 @@ class LoginController extends Controller
 
     /**
      * 自定义登录字段
-     * @author 晚黎
+
      * @date   2016-10-20
      * @return [type]
      */

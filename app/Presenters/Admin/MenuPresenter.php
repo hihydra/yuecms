@@ -17,7 +17,7 @@ class MenuPresenter
 
 	/**
 	 * 返回菜单HTML代码
-	 * @author 晚黎
+
 	 * @date   2016-11-04T11:05:21+0800
 	 * @param  [type]                   $menu [description]
 	 * @return [type]                         [description]
@@ -37,7 +37,7 @@ Eof;
 	}
 	/**
 	 * 判断是否有子集
-	 * @author 晚黎
+
 	 * @date   2016-11-04T11:05:28+0800
 	 * @param  [type]                   $id    [description]
 	 * @param  [type]                   $name  [description]
@@ -69,7 +69,7 @@ Eof;
 
 	/**
 	 * 菜单按钮
-	 * @author 晚黎
+
 	 * @date   2016-11-04T11:05:38+0800
 	 * @param  [type]                   $id   [description]
 	 * @param  boolean                  $bool [description]
@@ -92,7 +92,7 @@ Eof;
 	}
 	/**
 	 * 根据用户不同的权限显示不同的内容
-	 * @author 晚黎
+
 	 * @date   2016-11-04T13:40:11+0800
 	 * @return [type]                   [description]
 	 */
@@ -114,7 +114,7 @@ Eof;
 	}
 	/**
 	 * 添加修改菜单关系select
-	 * @author 晚黎
+
 	 * @date   2016-11-04T16:29:51+0800
 	 * @param  [type]                   $menus [description]
 	 * @param  string                   $pid   [description]
@@ -143,7 +143,7 @@ Eof;
 	}
 	/**
 	 * 获取菜单关系名称
-	 * @author 晚黎
+
 	 * @date   2016-11-04
 	 * @param  [type]     $menus [所有菜单数据]
 	 * @param  [type]     $pid   [菜单关系pid]
@@ -165,7 +165,7 @@ Eof;
 	}
 	/**
 	 * 后台左侧菜单
-	 * @author 晚黎
+
 	 * @date   2016-11-06
 	 * @param  [type]     $sidebarMenus [菜单数据]
 	 * @return [type]                   [HTML]
@@ -198,7 +198,7 @@ Eof;
 	}
 	/**
 	 * 多级菜单显示
-	 * @author 晚黎
+
 	 * @date   2016-11-06
 	 * @param  [type]     $childMenu [子菜单数据]
 	 * @return [type]                [HTML]

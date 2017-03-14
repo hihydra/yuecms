@@ -21,7 +21,7 @@ class PermissionRepositoryEloquent extends BaseRepository implements PermissionR
     }
     /**
      * 查询权限并分页
-     * @author 晚黎
+
      * @date   2016-11-02T15:17:24+0800
      * @param  [type]                   $start  [起始数目]
      * @param  [type]                   $length [读取条数]
@@ -41,7 +41,7 @@ class PermissionRepositoryEloquent extends BaseRepository implements PermissionR
         }
 
         $count = $permission->count();
-        
+
         $permission = $permission->orderBy($order['name'], $order['dir']);
 
         $permissions = $permission->offset($start)->limit($length)->get();
@@ -50,7 +50,7 @@ class PermissionRepositoryEloquent extends BaseRepository implements PermissionR
     }
     /**
      * 获取所有的权限并按照功能分组
-     * @author 晚黎
+
      * @date   2016-11-03T13:20:18+0800
      * @return [type]                   [description]
      */

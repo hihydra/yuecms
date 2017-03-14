@@ -21,7 +21,7 @@ class RoleRepositoryEloquent extends BaseRepository implements RoleRepository
 
     /**
      * 查询角色并分页
-     * @author 晚黎
+
      * @date   2016-11-02T15:17:24+0800
      * @param  [type]                   $start  [起始数目]
      * @param  [type]                   $length [读取条数]
@@ -41,7 +41,7 @@ class RoleRepositoryEloquent extends BaseRepository implements RoleRepository
         }
 
         $count = $role->count();
-        
+
         $role = $role->orderBy($order['name'], $order['dir']);
 
         $roles = $role->offset($start)->limit($length)->get();

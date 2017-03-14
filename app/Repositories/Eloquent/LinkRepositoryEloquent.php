@@ -41,7 +41,7 @@ class LinkRepositoryEloquent extends BaseRepository implements LinkRepository
 
     /**
      * 获取友情链接数据
-     * @author 晚黎
+
      * @date   2016-12-14T15:57:44+0800
      * @param  [type]                   $start  [description]
      * @param  [type]                   $length [description]

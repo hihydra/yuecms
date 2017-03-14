@@ -3,7 +3,7 @@ namespace App\Traits;
 trait CategoryListTrait{
 	/**
 	 * 递归分类数据
-	 * @author 晚黎
+
 	 * @date   2016-12-08T16:03:43+0800
 	 * @param  [type]                   $categories [数据库或缓存中查询出来的数据]
 	 * @param  integer                  $pid        [菜单关系id]
@@ -27,7 +27,7 @@ trait CategoryListTrait{
 
 	/**
 	 * 排序子菜单并缓存
-	 * @author 晚黎
+
 	 * @date   2016-12-08T16:04:10+0800
 	 * @return [type]                   [description]
 	 */
@@ -44,13 +44,13 @@ trait CategoryListTrait{
 			// 缓存菜单数据
 			cache()->forever(config('admin.global.cache.categoryList'),$categoryList);
 			return $categoryList;
-			
+
 		}
 		return '';
 	}
 	/**
 	 * 获取菜单数据
-	 * @author 晚黎
+
 	 * @date   2016-11-04T10:45:38+0800
 	 * @return [type]                   [description]
 	 */

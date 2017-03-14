@@ -35,7 +35,7 @@ class ArticleRepositoryEloquent extends BaseRepository implements ArticleReposit
 
     /**
      * 获取文章列表
-     * @author 晚黎
+
      * @date   2016-12-13T13:47:23+0800
      * @param  [type]                   $start  [description]
      * @param  [type]                   $length [description]
@@ -72,7 +72,7 @@ class ArticleRepositoryEloquent extends BaseRepository implements ArticleReposit
     }
     /**
      * 获取文章信息
-     * @author 晚黎
+
      * @date   2016-12-13T14:15:29+0800
      * @param  [type]                   $id [description]
      * @return [type]                       [description]

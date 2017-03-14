@@ -17,7 +17,7 @@ class PermissionService
 	}
 	/**
 	 * datatables获取数据
-	 * @author 晚黎
+
 	 * @date   2016-11-02T10:31:46+0800
 	 * @return [type]                   [description]
 	 */
@@ -57,7 +57,7 @@ class PermissionService
 	}
 	/**
 	 * 添加权限
-	 * @author 晚黎
+
 	 * @date   2016-11-02T10:32:18+0800
 	 * @param  [type]                   $formData [表单中所有的数据]
 	 * @return [type]                             [true or false]
@@ -76,7 +76,7 @@ class PermissionService
 	}
 	/**
 	 * 根据ID获取权限数据
-	 * @author 晚黎
+
 	 * @date   2016-11-02T11:44:36+0800
 	 * @param  [type]                   $id [权限id]
 	 * @return [type]                       [查询出来的权限对象，查不到数据时跳转404]
@@ -91,7 +91,7 @@ class PermissionService
 	}
 	/**
 	 * 修改权限
-	 * @author 晚黎
+
 	 * @date   2016-11-02T12:45:00+0800
 	 * @param  [type]                   $attributes [表单数据]
 	 * @param  [type]                   $id         [resource路由传递过来的id]
@@ -115,7 +115,7 @@ class PermissionService
 	}
 	/**
 	 * 权限暂不做状态管理，直接删除
-	 * @author 晚黎
+
 	 * @date   2016-11-02T13:23:45+0800
 	 * @param  [type]                   $id [权限id]
 	 * @return [type]                       [true or false]
@@ -131,6 +131,6 @@ class PermissionService
 			$this->sendSystemErrorMail(env('MAIL_SYSTEMERROR',''),$e);
 			return false;
 		}
-		
+
 	}
 }

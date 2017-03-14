@@ -4,7 +4,7 @@ trait ActionButtonAttributeTrait
 {
 	/**
 	 * 查看按钮
-	 * @author 晚黎
+
 	 * @date   2016-10-31T18:14:09+0800
 	 * @param  boolean		$type [默认为跳转页面查看信息,false时<a>标签带上modal样式]
 	 * @return [type]
@@ -32,7 +32,7 @@ trait ActionButtonAttributeTrait
 			if (auth()->user()->can(config('admin.permissions.'.$this->action.'.show'))) {
 				$id = isset($this->encodeId) ? $this->encodeId:$this->id;
 				return '<a href="'.url($this->action.'/'.$id.'.html').'" class="btn btn-xs btn-info btn-outline tooltips" data-original-title="' . trans('admin/action.actionButton.show') . '" target="_blank" data-placement="top"><i class="fa fa-eye"></i></a> ';
-				
+
 			}
 			return '';
 		}
@@ -41,7 +41,7 @@ trait ActionButtonAttributeTrait
 
 	/**
 	 * 修改按钮
-	 * @author 晚黎
+
 	 * @date   2016-10-31T18:13:50+0800
 	 * @return [type]
 	 */
@@ -56,7 +56,7 @@ trait ActionButtonAttributeTrait
 
 	/**
 	 * 彻底删除按钮
-	 * @author 晚黎
+
 	 * @date   2016-10-31T18:14:39+0800
 	 * @param  boolean
 	 * @return [type]
@@ -71,7 +71,7 @@ trait ActionButtonAttributeTrait
 	}
 	/**
 	 * 重置用户密码
-	 * @author 晚黎
+
 	 * @date   2016-10-31T18:14:48+0800
 	 * @return [type]
 	 */
@@ -85,7 +85,7 @@ trait ActionButtonAttributeTrait
 	}
 	/**
 	 * 发布文章
-	 * @author 晚黎
+
 	 * @date   2016-12-14T09:53:42+0800
 	 * @return [type]                   [description]
 	 */
@@ -99,7 +99,7 @@ trait ActionButtonAttributeTrait
 	}
 	/**
 	 * 待审核
-	 * @author 晚黎
+
 	 * @date   2016-12-14T09:53:32+0800
 	 * @return [type]                   [description]
 	 */
@@ -111,10 +111,10 @@ trait ActionButtonAttributeTrait
 		}
 		return '';
 	}
-	
+
 	/**
 	 * 获取按钮
-	 * @author 晚黎
+
 	 * @date   2016-10-31T18:14:57+0800
 	 * @param  boolean
 	 * @return [type]
@@ -129,7 +129,7 @@ trait ActionButtonAttributeTrait
 
 	/**
 	 * 文章列表
-	 * @author 晚黎
+
 	 * @date   2016-12-14T09:54:47+0800
 	 * @return [type]                   [description]
 	 */

@@ -25,7 +25,7 @@ class ArticleService{
 	}
 	/**
 	 * datatables获取数据
-	 * @author 晚黎
+
 	 * @date   2016-11-02T10:31:46+0800
 	 * @return [type]                   [description]
 	 */
@@ -65,7 +65,7 @@ class ArticleService{
 
 	/**
 	 * 添加视图
-	 * @author 晚黎
+
 	 * @date   2016-12-09T15:41:37+0800
 	 * @return [type]                   [description]
 	 */
@@ -77,7 +77,7 @@ class ArticleService{
 	}
 	/**
 	 * 添加文章
-	 * @author 晚黎
+
 	 * @date   2016-12-12T16:37:23+0800
 	 * @param  [type]                   $attributes [description]
 	 * @return [type]                               [description]
@@ -122,7 +122,7 @@ class ArticleService{
 	}
 	/**
 	 * 修改视图
-	 * @author 晚黎
+
 	 * @date   2016-12-13T14:10:42+0800
 	 * @return [type]                   [description]
 	 */
@@ -137,7 +137,7 @@ class ArticleService{
 
 	/**
 	 * 修改文章
-	 * @author 晚黎
+
 	 * @date   2016-12-13T17:27:19+0800
 	 * @param  [type]                   $attributes [description]
 	 * @param  [type]                   $id         [description]
@@ -191,7 +191,7 @@ class ArticleService{
 	}
 	/**
 	 * 角色暂不做状态管理，直接删除
-	 * @author 晚黎
+
 	 * @date   2016-11-03T10:01:36+0800
 	 * @param  [type]                   $id [权限id]
 	 * @return [type]                       [Boolean]
@@ -216,7 +216,7 @@ class ArticleService{
 
 	/**
 	 * 修改文章状态
-	 * @author 晚黎
+
 	 * @date   2016-12-14T10:12:55+0800
 	 * @param  [type]                   $id     [description]
 	 * @param  [type]                   $status [description]
@@ -237,7 +237,7 @@ class ArticleService{
 
 	/**
 	 * markdown 图片上传
-	 * @author 晚黎
+
 	 * @date   2016-12-16T12:31:14+0800
 	 * @param  [type]                   $request [description]
 	 * @return [type]                            [description]

@@ -39,7 +39,7 @@ class UserRequest extends FormRequest
 
     /**
      * 验证信息
-     * @author 晚黎
+
      * @date   2016-11-03T14:52:55+0800
      * @return [type]                   [description]
      */
@@ -54,7 +54,7 @@ class UserRequest extends FormRequest
     }
     /**
      * 字段名称
-     * @author 晚黎
+
      * @date   2016-11-03T14:52:38+0800
      * @return [type]                   [description]
      */

@@ -5,7 +5,7 @@ class ArticlePresenter
 {
 	/**
 	 * 文章分类数据
-	 * @author 晚黎
+
 	 * @date   2016-12-12T14:15:20+0800
 	 * @param  [type]                   $categories [description]
 	 * @return [type]                               [description]
@@ -25,7 +25,7 @@ Eof;
 
 	/**
 	 * 标签数据
-	 * @author 晚黎
+
 	 * @date   2016-12-12T14:15:09+0800
 	 * @param  [type]                   $tags [description]
 	 * @return [type]                         [description]

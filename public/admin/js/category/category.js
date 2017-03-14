@@ -28,7 +28,7 @@ var CategoryList = function() {
     };
     /**
      * 添加分类
-     * @author 晚黎
+
      * @date   2016-11-04T10:07:56+0800               [description]
      */
     $(menu.box).on('click',menu.createMenu,function () {
@@ -50,7 +50,7 @@ var CategoryList = function() {
     $('.tooltips').tooltip();
     /**
      * 添加分类
-     * @author 晚黎
+
      * @date   2016-11-04T16:12:58+0800
      */
     $(menu.box).on('click','.createButton',function () {
@@ -91,7 +91,7 @@ var CategoryList = function() {
     });
     /**
      * 修改分类表单
-     * @author 晚黎
+
      * @date   2016-11-04T16:13:20+0800
      */
     $('#nestable').on('click','.editMenu',function () {
@@ -116,7 +116,7 @@ var CategoryList = function() {
     });
     /**
      * 修改分类数据
-     * @author 晚黎
+
      * @date   2016-11-04T16:51:00+0800
      */
     $(menu.box).on('click','.editButton',function () {
@@ -158,7 +158,7 @@ var CategoryList = function() {
     });
     /**
      * 查看分类详细信息
-     * @author 晚黎
+
      * @date   2016-11-04
      */
     $('#nestable').on('click','.showInfo',function () {

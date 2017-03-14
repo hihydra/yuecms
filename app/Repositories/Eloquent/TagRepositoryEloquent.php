@@ -32,7 +32,7 @@ class TagRepositoryEloquent extends BaseRepository implements TagRepository
 
     /**
      * 查询标签并分页
-     * @author 晚黎
+
      * @date   2016-12-09T11:15:36+0800
      * @param  [type]                   $start  [起始数目]
      * @param  [type]                   $length [读取条数]
@@ -52,7 +52,7 @@ class TagRepositoryEloquent extends BaseRepository implements TagRepository
         }
 
         $count = $tag->count();
-        
+
         $tag = $tag->orderBy($order['name'], $order['dir']);
 
         $tags = $tag->offset($start)->limit($length)->get();
@@ -61,7 +61,7 @@ class TagRepositoryEloquent extends BaseRepository implements TagRepository
     }
     /**
      * 获取所有标签
-     * @author 晚黎
+
      * @date   2016-12-12T14:25:11+0800
      * @return [type]                   [description]
      */
@@ -72,7 +72,7 @@ class TagRepositoryEloquent extends BaseRepository implements TagRepository
 
     /**
      * 查找标签，不存在就创建
-     * @author 晚黎
+
      * @date   2016-12-12T16:50:26+0800
      * @param  [type]                   $attributes [description]
      * @return [type]                               [description]

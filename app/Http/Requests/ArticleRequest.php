@@ -42,20 +42,19 @@ class ArticleRequest extends FormRequest
     }
     /**
      * 字段名称
-     * @author 晚黎
+
      * @date   2016-11-02T10:28:52+0800
      * @return [type]                   [description]
      */
     public function attributes()
     {
         return [
-            'cid'           => trans('admin/article.model.cid'),
+            'category_id'   => trans('admin/article.model.category'),
             'title'         => trans('admin/article.model.title'),
             'author'        => trans('admin/article.model.author'),
             'content_html'  => trans('admin/article.model.content_html'),
             'content_mark'  => trans('admin/article.model.content_mark'),
-            'tags'        => trans('admin/article.tags'),
-            'cid'        => trans('admin/article.model.cid'),
+            'tags'          => trans('admin/article.tags'),
         ];
     }
 }

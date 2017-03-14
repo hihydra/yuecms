@@ -21,7 +21,7 @@ class UserRepositoryEloquent extends BaseRepository implements UserRepository
 
     /**
      * 查询角色并分页
-     * @author 晚黎
+
      * @date   2016-11-03T12:56:28+0800
      * @param  [type]                   $start  [起始数目]
      * @param  [type]                   $length [读取条数]
@@ -41,7 +41,7 @@ class UserRepositoryEloquent extends BaseRepository implements UserRepository
         }
 
         $count = $user->count();
-        
+
         $user = $user->orderBy($order['name'], $order['dir']);
 
         $users = $user->offset($start)->limit($length)->get();
@@ -61,5 +61,5 @@ class UserRepositoryEloquent extends BaseRepository implements UserRepository
     //     }
     //     return false;
     // }
-    
+
 }

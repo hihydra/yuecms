@@ -17,7 +17,7 @@ class MenuController extends Controller
 
     /**
      * 菜单列表
-     * @author 晚黎
+
      * @date   2016-11-04T09:17:47+0800
      * @return [type]                   [description]
      */
@@ -29,7 +29,7 @@ class MenuController extends Controller
 
     /**
      * 添加菜单视图
-     * @author 晚黎
+
      * @date   2016-11-04T09:53:36+0800
      * @return [type]                   [description]
      */
@@ -41,7 +41,7 @@ class MenuController extends Controller
 
     /**
      * 添加菜单
-     * @author 晚黎
+
      * @date   2016-11-04T15:08:20+0800
      * @param  MenuRequest              $request [description]
      * @return [type]                            [description]
@@ -54,7 +54,7 @@ class MenuController extends Controller
 
     /**
      * 查看菜单详细数据
-     * @author 晚黎
+
      * @date   2016-11-04
      * @param  [type]     $id [description]
      * @return [type]         [description]
@@ -68,7 +68,7 @@ class MenuController extends Controller
 
     /**
      * 修改菜单视图
-     * @author 晚黎
+
      * @date   2016-11-04T16:26:53+0800
      * @param  [type]                   $id [description]
      * @return [type]                       [description]
@@ -82,7 +82,7 @@ class MenuController extends Controller
 
     /**
      * 修改菜单数据
-     * @author 晚黎
+
      * @date   2016-11-04T17:57:32+0800
      * @param  MenuRequest              $request [description]
      * @param  [type]                   $id      [description]
@@ -96,7 +96,7 @@ class MenuController extends Controller
 
     /**
      * 删除菜单
-     * @author 晚黎
+
      * @date   2016-11-04
      * @param  [type]     $id [description]
      * @return [type]         [description]
