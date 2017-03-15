@@ -6,6 +6,7 @@ use App\Repositories\Eloquent\TagRepositoryEloquent;
 use App\Traits\QiniuTrait;
 use App\Traits\RedisOperationTrait;
 use App\Traits\SendSystemErrorTrait;
+use Illuminate\Http\Request;
 use Exception;
 /**
 * 角色service
@@ -178,8 +179,6 @@ class ArticleService{
 				$tagIds = array_unique(array_merge($tagIds,$attributes['tags']));
 
 				$result->tag()->sync($tagIds);
-
-				$result->category()->sync($attributes['cid']);
 			}
 			flash_info($result,trans('admin/alert.article.edit_success'),trans('admin/alert.article.edit_error'));
 			return $result;

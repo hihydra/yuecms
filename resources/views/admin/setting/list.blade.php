@@ -108,8 +108,8 @@
                     </div>
                     <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"></div>
                     <div>
-                      <span class="btn btn-default btn-file"><span class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span><input type="file" name="sponsor_alipay"></span>
-                      <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                      <span class="btn btn-default btn-file"><span class="fileinput-new">选择图片</span><span class="fileinput-exists">更换</span><input type="file" name="sponsor_alipay"></span>
+                      <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">移除</a>
                     </div>
                   </div>
                 </div>
@@ -124,8 +124,8 @@
                     </div>
                     <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"></div>
                     <div>
-                      <span class="btn btn-default btn-file"><span class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span><input type="file" name="sponsor_wechat"></span>
-                      <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                      <span class="btn btn-default btn-file"><span class="fileinput-new">选择图片</span><span class="fileinput-exists">更换</span><input type="file" name="sponsor_wechat"></span>
+                      <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">移除</a>
                     </div>
                   </div>
                 </div>

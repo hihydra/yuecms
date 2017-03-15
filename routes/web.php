@@ -37,7 +37,7 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin','middleware' => ['auth'
 	require(__DIR__ . '/admin/user.php');
 	// 菜单
 	require(__DIR__ . '/admin/menu.php');
-	// 博客分类
+	// 分类
 	require(__DIR__ . '/admin/category.php');
 	// 标签
 	require(__DIR__ . '/admin/tag.php');

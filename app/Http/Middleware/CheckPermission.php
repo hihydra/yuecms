@@ -32,7 +32,7 @@ class CheckPermission
             case $model.'.update':
                 $permission = config('admin.permissions.'.$model.'.edit','');
                 break;
-            
+
             default:
                 $permission = config('admin.permissions.'.$model,'');
                 break;

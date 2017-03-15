@@ -45,8 +45,10 @@ trait CategoryListTrait{
 			cache()->forever(config('admin.global.cache.categoryList'),$categoryList);
 			return $categoryList;
 
+		}else{
+			cache()->forever(config('admin.global.cache.categoryList'),$categories);
+			return '';
 		}
-		return '';
 	}
 	/**
 	 * 获取菜单数据

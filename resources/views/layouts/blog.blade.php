@@ -77,7 +77,7 @@
     @yield('paginate')
 
     @include('layouts.partials.footer')
-    
+
 </div>
 <a href="javascript:void(0);" class="js-back-to-top back-to-top-theme"></a>
 

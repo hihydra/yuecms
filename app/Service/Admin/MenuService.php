@@ -59,8 +59,10 @@ class MenuService{
 			cache()->forever(config('admin.global.cache.menuList'),$menuList);
 			return $menuList;
 
+		}else{
+			cache()->forever(config('admin.global.cache.menuList'),$menus);
+			return '';
 		}
-		return '';
 	}
 	/**
 	 * 获取菜单数据

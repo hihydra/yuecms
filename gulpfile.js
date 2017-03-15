@@ -37,8 +37,8 @@ elixir((mix) => {
             'footer-reveal.js',
             'prism.js',
         ],'public/js/app.js')
-    	.copy('resources/assets/fonts', 'public/fonts')
-    	.copy('resources/assets/js/html5shiv.js', 'public/js/html5shiv.js')
-    	.copy('resources/assets/js/respond.min.js', 'public/js/respond.min.js')
+    	.copy('resources/assets/fonts', 'public/front/fonts')
+    	.copy('resources/assets/js/html5shiv.js', 'public/front/js/html5shiv.js')
+    	.copy('resources/assets/js/respond.min.js', 'public/front/js/respond.min.js')
     	.version(['css/all.css','css/app.css', 'js/all.js', 'js/app.js']);
 });
