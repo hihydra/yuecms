@@ -37,8 +37,6 @@
     <input type="submit" value="立即登陆" class="submit_btn"/>
     </dd>
     <dd>
-    <p>晚黎后台权限系统</p>
-    <p>iwanli</p>
     </dd>
   </dl>
 </form>

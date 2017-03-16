@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Front;
-use App\Service\Front\CategoryService;
+use App\Service\Api\CategoryService;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -22,9 +22,11 @@ class CategoryController extends Controller
      * @param  [type]                   $id [description]
      * @return [type]                       [description]
      */
-    public function show($id)
+    public function show($storeId)
     {
-        $result = $this->service->getArticleList($id);
+        $catList = $this->service->getCatList();
+        $goodsList = $this->service->getGoodsList();
+        dd(compact('catList','goodsList'));
         return view('front.category.list')->with($result);
     }
 

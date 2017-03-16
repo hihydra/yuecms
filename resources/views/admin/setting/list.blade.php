@@ -100,31 +100,15 @@
               </div>
               <div class="hr-line-dashed"></div>
               <div class="form-group">
-                <label class="col-sm-2 control-label">{{trans('admin/setting.sponsor_alipay')}}</label>
+                <label class="col-sm-2 control-label">{{trans('admin/setting.download_app')}}</label>
                 <div class="col-sm-10">
                   <div class="fileinput fileinput-new" data-provides="fileinput">
                     <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
-                      <img src="{{$setting['sponsor_alipay'] ? $setting['sponsor_alipay'] : asset('admin/img/no-image.png')}}">
+                      <img src="{{$setting['download_app'] ? $setting['download_app'] : asset('admin/img/no-image.png')}}">
                     </div>
                     <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"></div>
                     <div>
-                      <span class="btn btn-default btn-file"><span class="fileinput-new">选择图片</span><span class="fileinput-exists">更换</span><input type="file" name="sponsor_alipay"></span>
-                      <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">移除</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="hr-line-dashed"></div>
-              <div class="form-group">
-                <label class="col-sm-2 control-label">{{trans('admin/setting.sponsor_wechat')}}</label>
-                <div class="col-sm-10">
-                  <div class="fileinput fileinput-new" data-provides="fileinput">
-                    <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
-                      <img src="{{$setting['sponsor_wechat'] ? $setting['sponsor_wechat'] : asset('admin/img/no-image.png')}}">
-                    </div>
-                    <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"></div>
-                    <div>
-                      <span class="btn btn-default btn-file"><span class="fileinput-new">选择图片</span><span class="fileinput-exists">更换</span><input type="file" name="sponsor_wechat"></span>
+                      <span class="btn btn-default btn-file"><span class="fileinput-new">选择图片</span><span class="fileinput-exists">更换</span><input type="file" name="download_app"></span>
                       <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">移除</a>
                     </div>
                   </div>

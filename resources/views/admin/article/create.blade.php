@@ -141,7 +141,7 @@
                               <label class="col-sm-1 control-label">{{trans('admin/article.push')}}</label>
                               <div class="col-sm-10">
                                 <div class="i-checks">
-                                  <label> <input type="checkbox" name="status" @if(old('status')) checked @endif value="1"></label>
+                                  <label> <input type="checkbox" name="status" checked value="1"></label>
                                 </div>
                               </div>
                             </div>

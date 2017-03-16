@@ -10,17 +10,25 @@ class BaseService
 		$this->client = new \GuzzleHttp\Client(['base_uri' => env('API_URL')]);  //api接口地址
 	}
 
+    public function is_login(){
+
+    }
+
 	public function http_curl($path,$query,$mothod="GET"){
     	$response = $this->client->request($mothod,$path,['query'=>$query]);
     	if ($response->getStatusCode() == 200) {
-    		$body = json_decode($response->getbody(),true);
-    		if ($body['result'] == 1) {
-
-    		}else if($body['result'] == 2){
-
-    		}else{
-    			abort(500,$body['message']);
-    		}
+    		$body = json_decode($response->getbody());
+            switch ($body->result) {
+                case '1':
+                    return $body->data;
+                    break;
+                case '2':
+                    # code...
+                    break;
+                default:
+                    abort(500,$body->message);
+                    break;
+            }
 		}else{
 			abort(500);
 		}

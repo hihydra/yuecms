@@ -63,7 +63,7 @@ return [
 		'zset' => 'trending_articles',
 		'hash' => 'article.',
 	],
-	'imagePath' => '/image/',
+	'imagePath' => '/uploads/',
 	'blog' => 'blog.system',
 	//网站设置
 	'setting' => [
@@ -78,6 +78,8 @@ return [
 		'contact_qq' => '',
 		// 联系邮箱
 		'contact_email' => '',
+		//下载APP
+		'download_app' => '',
 		// 支付宝赞助
 		'sponsor_alipay' => '',
 		// 微信赞助
@@ -86,7 +88,7 @@ return [
 		'copyright' => '',
 		// 统计代码
 		'statistics' => '',
-		// 第三方评论，为空时启用博客自带评论
+		// 第三方评论，为空时启用网站自带评论
 		'comment' => '',
 		// 分享代码
 		'share' => '',

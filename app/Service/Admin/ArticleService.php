@@ -3,17 +3,18 @@ namespace App\Service\Admin;
 use App\Repositories\Eloquent\ArticleRepositoryEloquent;
 use App\Repositories\Eloquent\CategoryRepositoryEloquent;
 use App\Repositories\Eloquent\TagRepositoryEloquent;
-use App\Traits\QiniuTrait;
+use App\Traits\UploadTrait;
 use App\Traits\RedisOperationTrait;
 use App\Traits\SendSystemErrorTrait;
 use Illuminate\Http\Request;
 use Exception;
+use Auth;
 /**
 * 角色service
 */
 class ArticleService{
 
-	use SendSystemErrorTrait,QiniuTrait, RedisOperationTrait;
+	use SendSystemErrorTrait,RedisOperationTrait,UploadTrait;
 	protected $article;
 	protected $category;
 	protected $tag;
@@ -92,11 +93,12 @@ class ArticleService{
 				$attributes['banner'] = $attributes['edit_banner'];
 			}else{
 				if ($request->hasFile('banner')) {
-					$attributes['banner'] = $this->upload($request->file('banner'));
+					$attributes['banner'] = $this->uploadImage($request->file('banner'));
 				}
 			}
 
 			$attributes['content_html'] = $attributes['editor-html-code'];
+			$attributes['user_id'] = Auth::id();
 			$article = $this->article->skipPresenter()->create($attributes);
 
 			if ($article) {
@@ -251,7 +253,7 @@ class ArticleService{
 	public function upload($request)
 	{
 		if ($request->hasFile('editormd-image-file')) {
-			$path = $this->upload($request->file('editormd-image-file'));
+			$path = $this->uploadImage($request->file('editormd-image-file'));
 			return ['success'=> 1,'message' => trans('alert.article.upload_success'),'url' => $path];
 		}
 		return ['success'=> 0,'message' => trans('alert.article.upload_error')];

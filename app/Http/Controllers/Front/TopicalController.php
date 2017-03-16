@@ -3,7 +3,7 @@ namespace App\Http\Controllers\Front;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Service\Api\IndexService;
-class IndexController extends Controller
+class TopicalController extends Controller
 {
 	protected $service;
 
@@ -12,19 +12,10 @@ class IndexController extends Controller
 		$this->service = $service;
 	}
 
-    public function index()
+    public function show($storeId)
     {
-    	$data = $this->service->getIndex();
+    	$data = $this->service->getTopicalList($storeId);
         dd($data);
     	return view('front.index.blog')->with(compact('datas'));
-    }
-
-    public function search()
-    {
-        $result = $this->service->search(request('q',''));
-        if ($result) {
-            return view('front.index.search')->with($result);
-        }
-        return redirect('/');
     }
 }

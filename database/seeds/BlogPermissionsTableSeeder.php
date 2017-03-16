@@ -11,7 +11,7 @@ class BlogPermissionsTableSeeder extends Seeder
     public function run()
     {
         //////////
-        //博客管理//
+        //网站管理//
         //////////
         Permission::create([
             'name' => '内容管理',
@@ -192,21 +192,21 @@ class BlogPermissionsTableSeeder extends Seeder
         ]);
 
         /**
-         * 博客配置列表
+         * 网站配置列表
          */
         Permission::create([
-            'name' => '博客配置列表',
+            'name' => '网站配置列表',
             'slug' => 'blog.list',
-            'description' => '博客配置列表'
+            'description' => '网站配置列表'
         ]);
 
         /**
-         * 博客配置修改
+         * 网站配置修改
          */
         Permission::create([
-            'name' => '博客配置修改',
+            'name' => '网站配置修改',
             'slug' => 'blog.edit',
-            'description' => '博客配置修改'
+            'description' => '网站配置修改'
         ]);
 
         /**

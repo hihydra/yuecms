@@ -19,6 +19,7 @@ Route::group(['namespace' => 'Front'],function ($router){
 	$router->post('search','IndexController@search');
 	$router->get('/test','ArticleController@test');
 	require(__DIR__ . '/front/category.php');
+	require(__DIR__ . '/front/topical.php');
 	require(__DIR__ . '/front/article.php');
 	require(__DIR__ . '/front/tag.php');
 });

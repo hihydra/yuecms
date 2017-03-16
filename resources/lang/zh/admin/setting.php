@@ -9,6 +9,7 @@ return [
 	'about_content' => '关于我们的简介',
 	'contact_qq' => '联系QQ',
 	'contact_email' => '联系邮箱',
+	'download_app'  => '下载APP',
 	'sponsor_alipay' => '支付宝赞助',
 	'sponsor_wechat' => '微信赞助',
 	'copyright' => '版权',

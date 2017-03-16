@@ -10,7 +10,7 @@ class Article extends Model implements Transformable
 {
     use TransformableTrait,ActionButtonAttributeTrait;
 
-    protected $fillable = ['title','author','category_id','lead','banner','content_html','content_mark','meta_title','meta_keyword','meta_description','status',];
+    protected $fillable = ['title','author','category_id','lead','banner','content_html','content_mark','meta_title','meta_keyword','meta_description','status','user_id'];
     private $action = 'article';
 
 

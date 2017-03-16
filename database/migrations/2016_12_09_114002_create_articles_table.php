@@ -26,6 +26,7 @@ class CreateArticlesTable extends Migration
             $table->string('meta_keyword')->default('')->comment('SEO关键字');
             $table->string('meta_description')->default('')->comment('SEO描述');
             $table->tinyInteger('status')->default(3)->comment('状态');
+            $table->integer('user_id')->unsigned()->default(0)->index()->comment('用户ID');
             $table->timestamps();
 		});
 	}
