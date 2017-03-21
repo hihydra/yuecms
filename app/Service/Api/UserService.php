@@ -23,7 +23,7 @@ class UserService extends BaseService
     }
 
     //获取区域列表
-    public function getRegionList($pid){
+    public function getRegionList($pid=null){
         $path  = '/api/shop/region!list.do';
         $query = array('pid'=>$pid);
         $data = $this->http_curl($path,$query);
@@ -39,17 +39,9 @@ class UserService extends BaseService
     }
 
     //提交注册
-    public function getRegister($mobile,$nickname,$password,$validcode,$storeId){
+    public function getRegister($form){
         $path  = '/api/shop/account!register.do';
-        $query = array('mobile'=>$mobile,'nickname'=>$nickname,'password'=>$password,'validcode'=>$validcode,'storeId'=>$storeId);
-        $data = $this->http_curl($path,$query);
-        return $data;
-    }
-
-    //登录接口
-    public function getLogin($mobile,$password){
-        $path  = '/api/shop/account!login.do';
-        $query = array('mobile'=>$mobile,'password'=>$password);
+        $query = array($form);
         $data = $this->http_curl($path,$query);
         return $data;
     }
@@ -135,7 +127,7 @@ class UserService extends BaseService
     }
 
     //添加收货地址
-    public function getAddressList($from){
+    public function getAddressStore($from){
         $path  = '/api/shop/address!add.do';
         $query = $from;
         $data = $this->http_curl($path,$query);
@@ -175,7 +167,7 @@ class UserService extends BaseService
     }
 
     //意见反馈
-    public function getDirectLogin($mobile,$content){
+    public function getSuggestSave($mobile,$content){
         $path  = '/api/shop/suggest!save.do';
         $query = array('mobile'=>$mobile,'content'=>$content);
         $data = $this->http_curl($path,$query);

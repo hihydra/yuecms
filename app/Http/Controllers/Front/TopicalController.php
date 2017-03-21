@@ -14,8 +14,7 @@ class TopicalController extends Controller
 
     public function show($storeId)
     {
-    	$data = $this->service->getTopicalList($storeId);
-        dd($data);
-    	return view('front.index.blog')->with(compact('datas'));
+    	$resultData = $this->service->getTopicalList($storeId);
+    	return view('front.topical.show')->with($resultData);
     }
 }

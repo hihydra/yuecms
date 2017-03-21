@@ -6,6 +6,7 @@ var TableDatatablesAjax = function() {
       "serverSide": true,
       "searching" : true,
       "searchDelay": 800,
+      "order": [[ 0, 'desc' ]],
       "search": {
         "regex": true
       },
@@ -40,17 +41,17 @@ var TableDatatablesAjax = function() {
         	"name" : "name",
         	"orderable" : false,
         },
-        { 
+        {
         	"data": "created_at",
         	"name": "created_at",
         	"orderable" : true,
         },
-        { 
+        {
         	"data": "updated_at",
         	"name": "updated_at",
         	"orderable" : true,
         },
-        { 
+        {
           "data": "actionButton",
           "name": "actionButton",
           "type": "html",
@@ -61,7 +62,7 @@ var TableDatatablesAjax = function() {
         ajax_datatable.$('.tooltips').tooltip( {
           placement : 'top',
           html : true
-        });  
+        });
       },
       "language": {
         url: '/admin/i18n'

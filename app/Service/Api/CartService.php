@@ -1,6 +1,6 @@
 <?php
-namespace App\Service\Api;
 
+namespace App\Service\Api;
 
 //购物车相关接口
 class CartService extends BaseService

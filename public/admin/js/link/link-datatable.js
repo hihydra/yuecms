@@ -6,6 +6,7 @@ var TableDatatablesAjax = function() {
       "serverSide": true,
       "searching" : true,
       "searchDelay": 800,
+      "order": [[ 0, 'desc' ]],
       "search": {
         "regex": true
       },

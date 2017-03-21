@@ -1,5 +1,6 @@
 <?php
 namespace App\Service\Admin;
+
 use App\Repositories\Eloquent\ArticleRepositoryEloquent;
 use App\Repositories\Eloquent\CategoryRepositoryEloquent;
 use App\Repositories\Eloquent\TagRepositoryEloquent;
@@ -10,7 +11,7 @@ use Illuminate\Http\Request;
 use Exception;
 use Auth;
 /**
-* 角色service
+* 文章service
 */
 class ArticleService{
 
@@ -45,6 +46,7 @@ class ArticleService{
 		$search['value'] = request('search.value', '');
 		// 排序
 		$order['name'] = request('columns.' .request('order.0.column',0) . '.name');
+
 		$order['dir'] = request('order.0.dir','asc');
 
 		$result = $this->article->getArticleList($start,$length,$search,$order);
@@ -159,7 +161,7 @@ class ArticleService{
 				$attributes['banner'] = $attributes['edit_banner'];
 			}else{
 				if ($request->hasFile('banner')) {
-					$attributes['banner'] = $this->upload($request->file('banner'));
+					$attributes['banner'] = $this->uploadImage($request->file('banner'));
 				}
 			}
 

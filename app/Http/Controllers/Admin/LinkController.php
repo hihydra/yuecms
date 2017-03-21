@@ -3,7 +3,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Service\Admin\LinkService;
-use App\Http\Requests\LinkRequest;
+use App\Http\Requests\Admin\LinkRequest;
 class LinkController extends Controller
 {
     protected $link;

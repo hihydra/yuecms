@@ -86,9 +86,9 @@
               </div>
               <div class="hr-line-dashed"></div>
               <div class="form-group">
-                <label class="col-sm-2 control-label">{{trans('admin/setting.contact_qq')}}</label>
+                <label class="col-sm-2 control-label">{{trans('admin/setting.contact_us')}}</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" name="contact_qq" value="{{$setting['contact_qq']}}" placeholder="{{trans('admin/setting.contact_qq')}}">
+                  <input type="text" class="form-control" name="contact_us" value="{{$setting['contact_us']}}" placeholder="{{trans('admin/setting.contact_us')}}">
                 </div>
               </div>
               <div class="hr-line-dashed"></div>
@@ -96,6 +96,22 @@
                 <label class="col-sm-2 control-label">{{trans('admin/setting.contact_email')}}</label>
                 <div class="col-sm-10">
                   <input type="text" class="form-control" name="contact_email" value="{{$setting['contact_email']}}" placeholder="{{trans('admin/setting.contact_email')}}">
+                </div>
+              </div>
+              <div class="hr-line-dashed"></div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label">{{trans('admin/setting.logo')}}</label>
+                <div class="col-sm-10">
+                  <div class="fileinput fileinput-new" data-provides="fileinput">
+                    <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
+                      <img src="{{$setting['logo'] ? $setting['logo'] : asset('admin/img/no-image.png')}}">
+                    </div>
+                    <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"></div>
+                    <div>
+                      <span class="btn btn-default btn-file"><span class="fileinput-new">选择图片</span><span class="fileinput-exists">更换</span><input type="file" name="logo"></span>
+                      <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">移除</a>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="hr-line-dashed"></div>

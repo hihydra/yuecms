@@ -1,10 +1,7 @@
 <?php
-
-namespace App\Http\Requests;
-
+namespace App\Http\Requests\Admin;
 use Illuminate\Foundation\Http\FormRequest;
-
-class TagRequest extends FormRequest
+class MenuRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -23,16 +20,16 @@ class TagRequest extends FormRequest
      */
     public function rules()
     {
-        if (request()->isMethod('POST')) {
-            $rules['name'] = 'required|unique:tags,name';
-        }else{
+        $rules['name'] = 'required';
+        $rules['slug'] = 'required';
+        $rules['url'] = 'required';
+        // 添加权限
+        if (request()->isMethod('PUT') || request()->isMethod('PATH')) {
             // 修改时 request()->method() 方法返回的是 PUT或PATCH
-            $rules['name'] = 'required|unique:tags,name,'.$this->id;
             $rules['id'] = 'numeric|required';
         }
         return $rules;
     }
-
     /**
      * 验证信息
 
@@ -43,7 +40,6 @@ class TagRequest extends FormRequest
     {
         return [
             'required'  => trans('validation.required'),
-            'unique'    => trans('validation.unique'),
             'numeric'   => trans('validation.numeric'),
         ];
     }
@@ -56,8 +52,10 @@ class TagRequest extends FormRequest
     public function attributes()
     {
         return [
-            'id'    => trans('admin/tag.model.id'),
-            'name'  => trans('admin/tag.model.name'),
+            'name'      => trans('admin/menu.model.name'),
+            'url'       => trans('admin/menu.model.url'),
+            'slug'      => trans('admin/menu.model.slug'),
+            'id'        => trans('admin/menu.model.id'),
         ];
     }
 }

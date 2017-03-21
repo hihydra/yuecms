@@ -3,6 +3,7 @@ namespace App\Http\Controllers\Front;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Service\Api\IndexService;
+
 class IndexController extends Controller
 {
 	protected $service;
@@ -14,9 +15,8 @@ class IndexController extends Controller
 
     public function index()
     {
-    	$data = $this->service->getIndex();
-        dd($data);
-    	return view('front.index.blog')->with(compact('datas'));
+    	$resultData = $this->service->getIndex();
+    	return view('front.index.index')->with($resultData);
     }
 
     public function search()

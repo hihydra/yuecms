@@ -1,8 +1,6 @@
 <?php
-
 namespace App\Traits;
 
-use App\Models\User;
 use Image;
 use Auth;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
@@ -15,8 +13,8 @@ trait UploadTrait
      * @var UploadedFile $file
      */
     protected $file;
-    protected $allowed_extensions = ["png", "jpg", "gif", 'jpeg'];
     protected $attach;
+    protected $allowed_extensions = ["png", "jpg", "gif", 'jpeg'];
 
     public function __construct(AttachService $attach)
     {
@@ -106,7 +104,7 @@ trait UploadTrait
                             'type'=>$type,
                             'user_id'=>Auth::user()->id);
 
-        $this->attach->storeAttach($attributes);
+        //$this->attach->storeAttach($attributes);
         return $folderName .'/'. $safeName;
     }
 }

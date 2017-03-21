@@ -74,10 +74,12 @@ return [
 		'about_title' => '',
 		'about_en_title' => '',
 		'about_content' => '',
-		// 联系QQ
-		'contact_qq' => '',
+		// 联系我们
+		'contact_us' => '',
 		// 联系邮箱
 		'contact_email' => '',
+		//网站logo
+		'logo'=> '',
 		//下载APP
 		'download_app' => '',
 		// 支付宝赞助

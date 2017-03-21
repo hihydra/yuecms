@@ -2,8 +2,8 @@
 namespace App\Service\Api;
 
 
-//专题与商品相关接口
-class SpecialService extends BaseService
+//专题与商品收藏相关接口
+class CollectionService extends BaseService
 {
     //获取专题类型列表
     public function getSpecialTypeList(){

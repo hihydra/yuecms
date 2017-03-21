@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Requests;
+namespace App\Http\Requests\Admin;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class UserRequest extends FormRequest
+class TagRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -23,15 +23,11 @@ class UserRequest extends FormRequest
      */
     public function rules()
     {
-        $rules['name']      = 'required';
-        $rules['email']     = 'email';
-        // 添加权限
         if (request()->isMethod('POST')) {
-            $rules['username'] = 'required|unique:users,username';
-            $rules['password']  = 'required';
+            $rules['name'] = 'required|unique:tags,name';
         }else{
             // 修改时 request()->method() 方法返回的是 PUT或PATCH
-            $rules['username'] = 'required|unique:users,username,'.$this->id;
+            $rules['name'] = 'required|unique:tags,name,'.$this->id;
             $rules['id'] = 'numeric|required';
         }
         return $rules;
@@ -40,7 +36,7 @@ class UserRequest extends FormRequest
     /**
      * 验证信息
 
-     * @date   2016-11-03T14:52:55+0800
+     * @date   2016-11-02T10:25:59+0800
      * @return [type]                   [description]
      */
     public function messages()
@@ -49,22 +45,19 @@ class UserRequest extends FormRequest
             'required'  => trans('validation.required'),
             'unique'    => trans('validation.unique'),
             'numeric'   => trans('validation.numeric'),
-            'email'     => trans('validation.email'),
         ];
     }
     /**
      * 字段名称
 
-     * @date   2016-11-03T14:52:38+0800
+     * @date   2016-11-02T10:28:52+0800
      * @return [type]                   [description]
      */
     public function attributes()
     {
         return [
-            'id'        => trans('admin/user.model.id'),
-            'name'      => trans('admin/user.model.name'),
-            'username'  => trans('admin/user.model.username'),
-            'email'     => trans('admin/user.model.email'),
+            'id'    => trans('admin/tag.model.id'),
+            'name'  => trans('admin/tag.model.name'),
         ];
     }
 }

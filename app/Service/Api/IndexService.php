@@ -1,6 +1,6 @@
 <?php
-namespace App\Service\Api;
 
+namespace App\Service\Api;
 
 //主页相关接口
 class IndexService extends BaseService
@@ -14,7 +14,7 @@ class IndexService extends BaseService
     }
 
     //掌上门店列表
-    public function getOpenList($keyword,$anchor,$limit){
+    public function getOpenList($keyword,$anchor=null,$limit=null){
         $path  = '/api/shop/storefront!openList.do';
         $query = array('keyword'=>$keyword,'anchor'=>$anchor,'limit'=>$limit);
         $data = $this->http_curl($path,$query);
@@ -38,7 +38,7 @@ class IndexService extends BaseService
     }
 
     //店长推荐
-    public function getRecommend($storeId,$anchor){
+    public function getRecommend($storeId,$anchor=null){
         $path  = '/api/shop/goodsShowcase!recommend.do';
         $query = array('storeId'=>$storeId,'anchor'=>$anchor);
         $data = $this->http_curl($path,$query);
@@ -46,7 +46,7 @@ class IndexService extends BaseService
     }
 
     //个性推荐
-    public function getShowcaseList($storeId,$anchor){
+    public function getShowcaseList($storeId,$anchor=null){
         $path  = '/api/shop/goodsShowcase!list.do';
         $query = array('storeId'=>$storeId,'anchor'=>$anchor);
         $data = $this->http_curl($path,$query);
@@ -54,7 +54,7 @@ class IndexService extends BaseService
     }
 
     //折扣专区
-    public function getShowcaseSales($storeId,$anchor){
+    public function getShowcaseSales($storeId,$anchor=null){
         $path  = '/api/shop/goodsShowcase!sales.do';
         $query = array('storeId'=>$storeId,'anchor'=>$anchor);
         $data = $this->http_curl($path,$query);
@@ -62,7 +62,7 @@ class IndexService extends BaseService
     }
 
     //专题列表
-    public function getListByStore($storeId,$anchor,$keyword){
+    public function getListByStore($storeId,$anchor=null,$keyword=null){
         $path  = '/api/shop/special!listByStore.do';
         $query = array('storeId'=>$storeId,'anchor'=>$anchor,'keyword'=>$keyword);
         $data = $this->http_curl($path,$query);
@@ -78,7 +78,7 @@ class IndexService extends BaseService
     }
 
     //主题下的商品列表
-    public function getTopicalGoods($storeId,$topicalId,$anchor){
+    public function getTopicalGoods($storeId,$topicalId,$anchor=null){
         $path  = '/api/shop/topical!goods.do';
         $query = array('storeId'=>$storeId,'topicalId'=>$topicalId,'anchor'=>$anchor);
         $data = $this->http_curl($path,$query);

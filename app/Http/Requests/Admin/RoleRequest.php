@@ -1,7 +1,7 @@
 <?php
-namespace App\Http\Requests;
+namespace App\Http\Requests\Admin;
 use Illuminate\Foundation\Http\FormRequest;
-class MenuRequest extends FormRequest
+class RoleRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -21,11 +21,12 @@ class MenuRequest extends FormRequest
     public function rules()
     {
         $rules['name'] = 'required';
-        $rules['slug'] = 'required';
-        $rules['url'] = 'required';
         // 添加权限
-        if (request()->isMethod('PUT') || request()->isMethod('PATH')) {
+        if (request()->isMethod('POST')) {
+            $rules['slug'] = 'required|unique:roles,slug';
+        }else{
             // 修改时 request()->method() 方法返回的是 PUT或PATCH
+            $rules['slug'] = 'required|unique:roles,slug,'.$this->id;
             $rules['id'] = 'numeric|required';
         }
         return $rules;
@@ -40,6 +41,7 @@ class MenuRequest extends FormRequest
     {
         return [
             'required'  => trans('validation.required'),
+            'unique'    => trans('validation.unique'),
             'numeric'   => trans('validation.numeric'),
         ];
     }
@@ -52,10 +54,9 @@ class MenuRequest extends FormRequest
     public function attributes()
     {
         return [
-            'name'      => trans('admin/menu.model.name'),
-            'url'       => trans('admin/menu.model.url'),
-            'slug'      => trans('admin/menu.model.slug'),
-            'id'        => trans('admin/menu.model.id'),
+            'id'    => trans('admin/role.model.id'),
+            'name'  => trans('admin/role.model.name'),
+            'slug'  => trans('admin/role.model.slug'),
         ];
     }
 }

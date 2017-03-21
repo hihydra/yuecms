@@ -23,10 +23,10 @@ class BaseService
                     return $body->data;
                     break;
                 case '2':
-                    # code...
+                    return redirect('Front.login');
                     break;
                 default:
-                    abort(500,$body->message);
+                    return redirect()->back()->withInput()->withErrors($body->message);
                     break;
             }
 		}else{

@@ -2,7 +2,7 @@
 namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\ArticleRequest;
+use App\Http\Requests\Admin\ArticleRequest;
 use App\Service\Admin\ArticleService;
 class ArticleController extends Controller
 {

@@ -1,7 +1,10 @@
 <?php
-namespace App\Http\Requests;
+
+namespace App\Http\Requests\Admin;
+
 use Illuminate\Foundation\Http\FormRequest;
-class PermissionRequest extends FormRequest
+
+class CategoryReuqest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -21,12 +24,13 @@ class PermissionRequest extends FormRequest
     public function rules()
     {
         $rules['name'] = 'required';
-        // 添加权限
+        $rules['pid'] = 'required';
+
         if (request()->isMethod('POST')) {
-            $rules['slug'] = 'required|unique:permissions,slug';
+            $rules['name'] = 'required|unique:categories,name';
         }else{
             // 修改时 request()->method() 方法返回的是 PUT或PATCH
-            $rules['slug'] = 'required|unique:permissions,slug,'.$this->id;
+            $rules['name'] = 'required|unique:categories,name,'.$this->id;
             $rules['id'] = 'numeric|required';
         }
         return $rules;
@@ -41,7 +45,6 @@ class PermissionRequest extends FormRequest
     {
         return [
             'required'  => trans('validation.required'),
-            'unique'    => trans('validation.unique'),
             'numeric'   => trans('validation.numeric'),
         ];
     }
@@ -54,9 +57,10 @@ class PermissionRequest extends FormRequest
     public function attributes()
     {
         return [
-            'id'    => trans('admin/permission.model.id'),
-            'name'  => trans('admin/permission.model.name'),
-            'slug'  => trans('admin/permission.model.slug'),
+            'name'      => trans('admin/category.model.name'),
+            'url'       => trans('admin/category.model.url'),
+            'slug'      => trans('admin/category.model.slug'),
+            'id'        => trans('admin/category.model.id'),
         ];
     }
 }

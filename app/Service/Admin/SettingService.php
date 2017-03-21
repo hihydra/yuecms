@@ -1,5 +1,6 @@
 <?php
 namespace App\Service\Admin;
+
 use App\Traits\SendSystemErrorTrait;
 use Exception,Settings;
 use App\Traits\UploadTrait;
@@ -20,6 +21,12 @@ class SettingService
 		try {
 			$attributes = $request->except('_token');
 			$settings = settings(config('admin.global.blog'),[]);
+			// 网站logo
+			if ($request->hasFile('logo')) {
+				$attributes['logo'] = $this->uploadImage($request->file('logo'));
+			}else{
+				$attributes['logo']= isset($settings['logo']) ? $settings['logo']:'';
+			}
 			// 下载APP
 			if ($request->hasFile('download_app')) {
 				$attributes['download_app'] = $this->uploadImage($request->file('download_app'));
@@ -27,7 +34,7 @@ class SettingService
 				$attributes['download_app']= isset($settings['download_app']) ? $settings['download_app']:'';
 			}
 			settings([config('admin.global.blog') => $attributes]);
-			// 清楚缓存
+			// 清除缓存
 			if (cache()->has(config('admin.global.blog'))) {
 				cache()->forget(config('admin.global.blog'));
 			}

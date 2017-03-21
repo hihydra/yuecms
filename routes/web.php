@@ -11,7 +11,7 @@
 |
 */
 
-Auth::routes();
+
 
 
 Route::group(['namespace' => 'Front'],function ($router){
@@ -20,14 +20,23 @@ Route::group(['namespace' => 'Front'],function ($router){
 	$router->get('/test','ArticleController@test');
 	require(__DIR__ . '/front/category.php');
 	require(__DIR__ . '/front/topical.php');
-	require(__DIR__ . '/front/article.php');
-	require(__DIR__ . '/front/tag.php');
+	require(__DIR__ . '/front/login.php');
+	require(__DIR__ . '/front/register.php');
+	require(__DIR__ . '/front/user.php');
+	require(__DIR__ . '/front/address.php');
+	require(__DIR__ . '/front/cart.php');
+	require(__DIR__ . '/front/order.php');
+	require(__DIR__ . '/front/collection.php');
 });
 
-
+Route::group(['prefix' => 'admin'],function ($router)
+{
+	Auth::routes();
+});
 
 Route::group(['prefix' => 'admin','namespace' => 'Admin','middleware' => ['auth']],function ($router)
 {
+
 	$router->get('/dash','DashboardController@index')->name('system.index');
 	$router->get('/i18n', 'DashboardController@dataTableI18n');
 	// 权限

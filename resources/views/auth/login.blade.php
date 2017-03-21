@@ -10,7 +10,7 @@
   </style>
 </head>
 <body>
-<form role="form" method="POST" action="{{url('/login')}}">
+<form role="form" method="POST" action="{{url('admin/login')}}">
   {{ csrf_field() }}
   <dl class="admin_login">
     <dt>

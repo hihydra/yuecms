@@ -4,7 +4,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Service\Admin\PermissionService;
-use App\Http\Requests\PermissionRequest;
+use App\Http\Requests\Admin\PermissionRequest;
 class PermissionController extends Controller
 {
     private $permission;

@@ -3,7 +3,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Service\Admin\MenuService;
-use App\Http\Requests\MenuRequest;
+use App\Http\Requests\Admin\MenuRequest;
 class MenuController extends Controller
 {
     private $menu;

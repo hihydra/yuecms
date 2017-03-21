@@ -4,7 +4,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Service\Admin\RoleService;
-use App\Http\Requests\RoleRequest;
+use App\Http\Requests\Admin\RoleRequest;
 class RoleController extends Controller
 {
     private $role;

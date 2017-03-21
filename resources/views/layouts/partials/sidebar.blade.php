@@ -12,7 +12,7 @@
               <ul class="dropdown-menu animated fadeInRight m-t-xs">
                   <li><a href="profile.html">个人资料</a></li>
                   <li class="divider"></li>
-                  <li><a href="{{ url('logout') }}">退出</a></li>
+                  <li><a href="{{ url('admin/logout') }}">退出</a></li>
               </ul>
           </div>
           <div class="logo-element">

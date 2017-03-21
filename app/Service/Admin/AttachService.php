@@ -1,7 +1,6 @@
 <?php
 namespace App\Service\Admin;
 use App\Repositories\Eloquent\AttachRepositoryEloquent;
-use App\Traits\AttachTrait;
 use App\Traits\SendSystemErrorTrait;
 use Exception,DB;
 /**

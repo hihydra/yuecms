@@ -3,7 +3,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Service\Admin\TagService;
-use App\Http\Requests\TagRequest;
+use App\Http\Requests\Admin\TagRequest;
 class TagController extends Controller
 {
     protected $tag;
